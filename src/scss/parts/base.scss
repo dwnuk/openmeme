@@ -1,0 +1,29 @@
+$primary-color: #101725;
+
+
+
+html {
+	font-size: 62.5%;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    background-color: $primary-color;
+    color: #ffffff;
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
