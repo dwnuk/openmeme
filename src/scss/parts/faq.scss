@@ -2,7 +2,6 @@
   padding: 80px 0;
 
   h2 {
-    margin-bottom: 24px;
     text-transform: uppercase;
   }
 
@@ -33,7 +32,7 @@
 
       p {
         padding-right: 30px;
-        font-weight: 700;
+        font-weight: 900;
         line-height: 150%;
       }
 
@@ -52,6 +51,7 @@
           .minus {
             display: block;
           }
+
           .plus {
             display: none;
           }
@@ -62,6 +62,7 @@
 
     &.show {
       border: 2px solid #4297F7;
+
       .faq__collapse {
         padding-bottom: 32px;
         max-height: 200px;
@@ -74,6 +75,7 @@
     flex-direction: column;
     row-gap: 16px;
     font-size: 1.4rem;
+    font-weight: 500;
     line-height: 143%;
     letter-spacing: 0.28px;
     max-height: 0;
@@ -87,4 +89,66 @@
       row-gap: 2px;
     }
   }
+}
+
+@media (min-width: $md) {
+  .faq {
+
+
+   &__el {
+
+    &__top {
+      p {
+        font-size: 2rem;
+      }
+    }
+   }
+
+   &__collapse {
+    font-size: 1.6rem;
+   }
+  }
+}
+
+@media(min-width: $lg) {
+  .faq {
+
+    &__content {
+      row-gap: 24px;
+    }
+
+    &__el {
+
+      border-radius: 24px;
+      padding: 24px 24px 0 24px;
+     &__top {
+      margin-bottom: 24px;
+       p {
+         font-size: 2rem;
+       }
+     }
+    }
+
+    &__collapse {
+     font-size: 1.6rem;
+    }
+   }
+}
+
+@media(min-width: $xl) {
+  .faq {
+
+
+    &__el {
+     &__top {
+       p {
+         font-size: 2.4rem;
+       }
+     }
+    }
+
+    &__collapse {
+     font-size: 2rem;
+    }
+   }
 }

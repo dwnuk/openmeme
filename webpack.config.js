@@ -43,7 +43,7 @@ module.exports = {
 
         // new CopyWebpackPlugin({
         //     patterns: [{
-        //         from: "./src/html/**/*",
+        //         from: "./src/fonts/**/*",
         //         to: "[name].[ext]",
         //     }]
         // }),
@@ -72,7 +72,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(pdf|svg|png|jpg|jpeg|gif|mp4|otf|webp)$/,
+                test: /\.(pdf|svg|png|jpg|jpeg|gif|mp4|otf|webp|woff2|woff|ttf)$/,
                 use:
                     {
                         loader: "file-loader",
