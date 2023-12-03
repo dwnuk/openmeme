@@ -1,0 +1,263 @@
+.revolution {
+
+  h2 {
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 114%;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-bottom: 40px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+
+      p {
+        color: #A2ABB9;
+      }
+    }
+  }
+
+  &__subheading {
+    font-weight: 900;
+    line-height: 140%;
+    letter-spacing: -.2px;
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+
+  .best-sites {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 16px;
+    margin-bottom: 50px;
+
+    .kwejk,
+    .jbzdy {
+      width: calc(50% - 8px);
+      max-width: 318px;
+      padding: 16px;
+      border-radius: 12px;
+      border: 1px solid rgba(250, 250, 252, 0.20);
+      background: rgba(250, 250, 252, 0.04);
+
+      p {
+        &:first-of-type {
+          font-weight: 900;
+          line-height: 150%;
+          margin-bottom: 8px;
+        }
+
+        &:last-of-type {
+          font-size: 1.2rem;
+          line-height: 133%;
+          letter-spacing: .24px;
+          font-weight: 500;
+          color: #A2ABB9;
+        }
+      }
+    }
+  }
+
+
+}
+
+
+@media (min-width: $lg) {
+  .revolution {
+    &__top {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 100px;
+
+      h2,
+      div {
+        width: 48%;
+      }
+
+      h2 {
+        font-size: 4.5rem;
+      }
+
+      div {
+        font-size: 1.7rem;
+      }
+    }
+
+    &__subheading {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+    }
+
+    &__bottom {
+      display: grid;
+
+      .best-sites,
+      picture {
+        grid-row: 1;
+        grid-column: 1;
+      }
+
+      .best-sites {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        z-index: 50;
+        height: 100%;
+        position: relative;
+        z-index: 4;
+
+        &:after {
+          position: absolute;
+          top: 120px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: -1;
+          content: '';
+          display: block;
+          height: 250px;
+          width: 250px;
+          border-radius: 50%;
+          opacity: 0.8;
+background: #4297F7;
+filter: blur(100px);
+        }
+
+        .kwejk {
+          align-self: flex-end;
+          border-radius: 0 12px 12px 12px;
+        }
+
+        .jbzdy {
+          border-radius: 12px 12px 0 12px;
+        }
+      }
+
+      picture {
+        align-self: center;
+        justify-self: center;
+        display: block;
+        width: 50%;
+        z-index: 30;
+        margin: 60px auto 30px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+
+  }
+
+
+}
+
+@media (min-width: $xl) {
+  .revolution {
+    h2 {
+      font-size: 5rem;
+    }
+
+    &__top {
+      div {
+        font-size: 2rem;
+      }
+    }
+
+    &__bottom {
+      width: 90%;
+      margin: 0 auto;
+
+      .best-sites {
+        .kwejk,
+    .jbzdy {
+
+
+      p {
+
+
+        &:last-of-type {
+         line-height: 150%;
+        }
+      }
+    }
+      }
+    }
+  }
+}
+
+@media (min-width: $xxl) {
+  .revolution {
+    h2 {
+      font-size: 6rem;
+    }
+
+    &__top {
+      column-gap: 40px;
+      align-items: center;
+
+      div {
+        line-height: 140%;
+      }
+    }
+
+    &__bottom {
+      width: 1300px;
+      margin: 0 auto;
+
+      .best-sites {
+        &:after {
+
+          top: 180px;
+
+
+          display: block;
+          height: 465px;
+          width: 465px;
+
+
+background: #4297F7;
+filter: blur(153px);
+        }
+
+        .kwejk {
+          max-width: 360px;
+          border-radius: 0 24px 24px 24px;
+        }
+
+        .jbzdy {
+          border-radius: 24px 24px 0 24px;
+          margin-left: 40px;
+        }
+
+        .kwejk, .jbzdy {
+          padding: 24px;
+
+          p {
+            &:first-of-type {
+              font-size: 2.4rem;
+            }
+
+            &:last-of-type {
+            font-size: 1.6rem;
+            }
+          }
+        }
+
+
+      }
+
+      picture {
+        width: auto;
+        margin: 65px auto 0;
+      }
+    }
+  }
+}

@@ -38,23 +38,34 @@
 
       .collapse-btn {
         flex-shrink: 0;
+        width: 24px;
+        height: 24px;
+        position: relative;
 
-        .plus {
-          display: block;
+        &:after, &:before {
+          content: '';
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 2px;
+          height: 20px;
+          background-color: #fff;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(0deg);
+          transition: transform .5s;
         }
 
-        .minus {
-          display: none;
+        &:before {
+          transform: translate(-50%, -50%) rotate(90deg);
         }
+
 
         &.toggle {
-          .minus {
-            display: block;
-          }
-
-          .plus {
-            display: none;
-          }
+            &:after, &:before {
+              transform: translate(-50%, -50%) rotate(450deg);
+            }
         }
       }
 
@@ -118,9 +129,13 @@
     }
 
     &__el {
-
       border-radius: 24px;
       padding: 24px 24px 0 24px;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.04);
+      }
+
      &__top {
       margin-bottom: 24px;
        p {

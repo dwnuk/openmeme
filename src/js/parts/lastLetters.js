@@ -1,4 +1,4 @@
-let paragraphs = document.querySelectorAll('p');
+let paragraphs = document.querySelectorAll('p, h2');
 paragraphs.forEach(function(p) {
     var textReplace = p.innerHTML;
    textReplace = textReplace.replace(/(\s)([\S])[\s]+/g, "$1$2&nbsp;");

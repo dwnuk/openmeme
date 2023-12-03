@@ -113,7 +113,7 @@ $primary-color: #101725;
 
 html {
   font-size: 62.5%;
-  font-family: 'Satoshi', Arial, sans-serif;
+
   scroll-behavior: smooth;
 }
 
@@ -125,10 +125,22 @@ img {
 }
 
 body {
+  font-family: 'Satoshi', Arial, sans-serif;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-feature-settings: 'salt'on;
+
   background-color: $primary-color;
   color: #ffffff;
   font-size: 1.6rem;
   line-height: 1.2;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 3.6rem;
+  letter-spacing: -.36px;
+  line-height: 1;
+  margin-bottom: 16px;
 }
 
 h2 {
@@ -136,6 +148,13 @@ h2 {
   font-weight: 900;
   margin-bottom: 24px;
   letter-spacing: -1.2px;
+}
+
+h3 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-bottom: 24px;
+  letter-spacing: -.32px;
 }
 
 @media (min-width: $md) {
@@ -149,6 +168,10 @@ h2 {
 }
 
 @media (min-width: $lg) {
+
+  h1 {
+    font-size: 4.5rem;
+  }
 
   h2 {
     font-size: 5rem;
