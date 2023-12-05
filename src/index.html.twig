@@ -6,20 +6,71 @@
   <title>Openmeme.io</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Openmeme.io" />
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 
 <body>
+  <nav class="nav">
+    <div class="nav__wrapper">
+      <picture>
+        <source media="(min-width:992px)" srcset="./images/main-logo.webp">
+        <img src="./images/main-logo-sm.webp" alt="main logo image">
+      </picture>
 
-  <header class="header">
+      <div class="menu">
+        <div class="menu__main">
+          <div class="nav_el active">Start</div>
+          <div class="nav_el">Our&nbsp;experience</div>
+          <div class="nav_el">Why&nbsp;OMC?</div>
+          <div class="nav_el">Roadmap</div>
+          <div class="nav_el">Meme&nbsp;economy</div>
+          <div class="nav_el">FAQ</div>
+          <a href="" class="gitbook-link gitbook-link--desktop">Gitbook <img src="./images/gitbook-arrow-gray.webp" alt="small arrow"></a>
+          <a href="" class="nav-app-link nav-app-link--mobile">Enter the app <span>beta</span></a>
+        </div>
+
+
+        <div class="menu__rest">
+          <a href="" class="nav-app-link nav-app-link--desktop">Enter the app <span>beta</span></a>
+          <div class="social">
+            <a href="">
+              <img src="./images/discord.webp" alt="dicsord logo">
+            </a>
+            <a href="">
+              <img src="./images/telegram.webp" alt="telegram logo">
+            </a>
+            <a href="" class="gitbook-link gitbook-link--mobile">
+              Gitbook <img src="./images/gitbook-arrow.webp" alt="small arrow">
+            </a>
+          </div>
+
+          <div class="menu__footer">
+            <a href="">Terms of Service</a>
+            <a href="">Privacy Policy</a>
+            <p>2023 © Openmeme</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="burger">
+        <span></span>
+      </div>
+    </div>
+  </nav>
+  <header class="header navDestination">
     <div class="container">
       <h1>Earn as memes get viral and&nbsp;support
         the creators</h1>
       <p class="subtitle">Introducing <span>OMC: the only crypto token</span> with its value linked directly to the <span>meme economy.</span></p>
 
-      <button class="app-info" disabled>
+      <button class="app-info disabled-button" disabled>
         App is only available on desktop
       </button>
 
@@ -70,8 +121,8 @@
           <div class="sites">
             <div class="sites__el">
               <picture>
-                <source media="(min-width:992px)" srcset="./images/sites-logos/9gag.png">
-                <img src="./images/sites-logos/9gag-sm.png" alt="site logo">
+                <source media="(min-width:992px)" srcset="./images/sites-logos/9gag.webp">
+                <img src="./images/sites-logos/9gag-sm.webp" alt="site logo">
               </picture>
               <div>
                 104.6 M/mth
@@ -79,8 +130,8 @@
             </div>
             <div class="sites__el">
               <picture>
-                <source media="(min-width:992px)" srcset="./images/sites-logos/im.png">
-                <img src="./images/sites-logos/im-sm.png" alt="site logo">
+                <source media="(min-width:992px)" srcset="./images/sites-logos/im.webp">
+                <img src="./images/sites-logos/im-sm.webp" alt="site logo">
               </picture>
               <div>
                 9.7 M/mth
@@ -88,8 +139,8 @@
             </div>
             <div class="sites__el">
               <picture>
-                <source media="(min-width:992px)" srcset="./images/sites-logos/kym.png">
-                <img src="./images/sites-logos/kym-sm.png" alt="site logo">
+                <source media="(min-width:992px)" srcset="./images/sites-logos/kym.webp">
+                <img src="./images/sites-logos/kym-sm.webp" alt="site logo">
               </picture>
               <div>
                 16.6 M/mth
@@ -97,8 +148,8 @@
             </div>
             <div class="sites__el">
               <picture>
-                <source media="(min-width:992px)" srcset="./images/sites-logos/giphy.png">
-                <img src="./images/sites-logos/giphy-sm.png" alt="site logo">
+                <source media="(min-width:992px)" srcset="./images/sites-logos/giphy.webp">
+                <img src="./images/sites-logos/giphy-sm.webp" alt="site logo">
               </picture>
               <div>
                 73.62 M/mth
@@ -106,8 +157,8 @@
             </div>
             <div class="sites__el">
               <picture>
-                <source media="(min-width:992px)" srcset="./images/sites-logos/jbzdy.png">
-                <img src="./images/sites-logos/jbzdy-sm.png" alt="site logo">
+                <source media="(min-width:992px)" srcset="./images/sites-logos/jbzdy.webp">
+                <img src="./images/sites-logos/jbzdy-sm.webp" alt="site logo">
               </picture>
               <div>
                 18.2 M/mth
@@ -115,8 +166,8 @@
             </div>
             <div class="sites__el">
               <picture>
-                <source media="(min-width:992px)" srcset="./images/sites-logos/kwejk.png">
-                <img src="./images/sites-logos/kwejk-sm.png" alt="site logo">
+                <source media="(min-width:992px)" srcset="./images/sites-logos/kwejk.webp">
+                <img src="./images/sites-logos/kwejk-sm.webp" alt="site logo">
               </picture>
               <div>
                 9.9 M/mth
@@ -131,7 +182,7 @@
     </div>
   </section>
 
-  <section class="revolution">
+  <section class="revolution navDestination">
     <div class="container">
       <div class="revolution__top">
         <h2>How are we making the&nbsp;Web3 revolution a reality?</h2>
@@ -140,7 +191,7 @@
             OMC coin is the official currency of Openmeme—an upcoming social platform that revolutionizes meme sharing.
           </p>
           <p>
-            Building on our rich experience with similar platforms, we’re creating an ecosystem which brings real value to memes and empowers their creators. We want every piece of media on the Internet to have an owner, who benefits from their work spreading around.
+            Building on our rich experience with similar platforms, we're creating an ecosystem which brings real value to memes and empowers their creators. We want every piece of media on the Internet to have an owner, who benefits from their work spreading around.
           </p>
         </div>
       </div>
@@ -167,8 +218,8 @@
         </div>
 
         <picture>
-          <source media="(min-width:768px)" srcset="./images/bane-vs-joji.png">
-          <img src="./images/bane-vs-joji-sm.png" alt="bane vs joji meme">
+          <source media="(min-width:768px)" srcset="./images/bane-vs-joji.webp">
+          <img src="./images/bane-vs-joji-sm.webp" alt="bane vs joji meme">
         </picture>
 
 
@@ -178,24 +229,26 @@
     </div>
   </section>
 
-  <section class="omc">
-    <div class="container">
-      <div class="heading">
-        <h2>What is OMC and <br>why it's so big?</h2>
-        <img src="./images/omc-circle.png" alt="yellow circle">
-      </div>
+  <section class="omc navDestination">
+    <div class="omc__content">
 
-      <div class="omc__content">
+      <div class="omc__el omc__el--1">
+        <div class="container">
+          <div class="heading_box">
+            <div class="heading">
+              <h2>What is OMC and <br>why it's so big?</h2>
+              <img src="./images/omc-circle.webp" alt="yellow circle">
+            </div>
+          </div>
 
-        <div class="omc__el">
-          <div class="omc__img">
+          <div class="omc__img omc__img--blue blue-bg">
             <picture>
-              <source media="(min-width:768px)" srcset="./images/omc/omc-1.png">
-              <img src="./images/omc/sm-omc-1.png" alt="omc image">
+              <source media="(min-width:768px)" srcset="./images/omc/omc-1.webp">
+              <img src="./images/omc/sm-omc-1.webp" alt="omc image">
             </picture>
           </div>
           <div class="omc__txt">
-            <h3><span class="blue">Game changing</span> project 🎉</h3>
+            <h3><span class="blue-txt">Game changing</span> <br>project 🎉</h3>
             <p>
               OMC fuels the revolutionary Web3 meme economy, which transforms the way we think about sharing content on the internet.
             </p>
@@ -204,52 +257,58 @@
             </p>
           </div>
         </div>
+      </div>
 
-        <div class="omc__el">
-          <div class="omc__img">
+      <div class="omc__el omc__el--2">
+        <div class="container">
+          <div class="omc__img omc__img--yellow yellow-bg">
             <picture>
-              <source media="(min-width:768px)" srcset="./images/omc/omc-2.png">
-              <img src="./images/omc/sm-omc-2.png" alt="omc image">
+              <source media="(min-width:768px)" srcset="./images/omc/omc-2.webp">
+              <img src="./images/omc/sm-omc-2.webp" alt="omc image">
             </picture>
           </div>
           <div class="omc__txt">
-            <h3><span class="yellow">The future</span> of economy 💸</h3>
+            <h3><span class="yellow-txt">The future</span> <br>of economy 💸</h3>
             <p>
-              Memes are the most viral content in the world. We’re taking advantage of this enormous potential with Openmeme.io - a social network which generates income from trading NFT memes on the marketplace. And the best part? As a holder of OMC, YOU profit from the smart contracts that fuel the economy and Openmeme dividends. To the moon!
+              Memes are the most viral content in the world. We're taking advantage of this enormous potential with Openmeme.io - a social network which generates income from trading NFT memes on the marketplace. And the best part? As a holder of OMC, YOU profit from the smart contracts that fuel the economy and Openmeme dividends. To the moon!
             </p>
             <p>
               P.S. How big is the market, really? Just get this: an average millenial shares 25 memes. Every. Single. Day. You do the math.
             </p>
           </div>
         </div>
+      </div>
 
-        <div class="omc__el">
-          <div class="omc__img">
+      <div class="omc__el omc__el--3">
+        <div class="container">
+          <div class="omc__img omc__img--purple">
             <picture>
-              <source media="(min-width:768px)" srcset="./images/omc/omc-3.png">
-              <img src="./images/omc/sm-omc-3.png" alt="omc image">
+              <source media="(min-width:768px)" srcset="./images/omc/omc-3.webp">
+              <img src="./images/omc/sm-omc-3.webp" alt="omc image">
             </picture>
           </div>
           <div class="omc__txt">
-            <h3><span class="purple">Rock-solid </span> foundations 💪</h3>
+            <h3><span class="purple-txt">Rock-solid </span> <br>foundations 💪</h3>
             <p>
               OMC is the latest project of a team of proven entrepreneurs. Our founders created some of Europe's biggest meme sharing platforms and communities, still going strong after over a decade. An army of Web2 memers ready to move into Web3!
             </p>
             <p>
-              We’re joined by seasoned blockchain, crypto, and fintech specialists, who help us bring our meme experience into the world of Web3.
+              We're joined by seasoned blockchain, crypto, and fintech specialists, who help us bring our meme experience into the world of Web3.
             </p>
           </div>
         </div>
+      </div>
 
-        <div class="omc__el">
-          <div class="omc__img">
+      <div class="omc__el omc__el--4">
+        <div class="container">
+          <div class="omc__img omc__img--orange orange-bg">
             <picture>
-              <source media="(min-width:768px)" srcset="./images/omc/omc-4.png">
-              <img src="./images/omc/sm-omc-4.png" alt="omc image">
+              <source media="(min-width:992px)" srcset="./images/omc/omc-4.webp">
+              <img src="./images/omc/sm-omc-4.webp" alt="omc image">
             </picture>
           </div>
           <div class="omc__txt">
-            <h3>Smooth transition into <span class="orange">Web3</span> 😻</h3>
+            <h3>Smooth transition <br>into <span class="orange-txt">Web3</span> 😻</h3>
             <p>
               OMC fuels the revolutionary Web3 meme economy, which transforms the way we think about sharing content on the internet.
             </p>
@@ -258,17 +317,101 @@
             </p>
           </div>
         </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="roadmap navDestination">
+    <div class="container">
+      <h2>
+        Project Roadmap
+      </h2>
+      <p class="roadmap__txt">
+        We’re right on track to revolutionize meme sharing and establish a profitable meme economy.
+      </p>
+
+      <div class="roadmap__visualization">
+        <picture>
+          <source media="(min-width:992px)" srcset="./images/roadmap.webp">
+          <img src="./images/roadmap-sm.webp" alt="roadmap image">
+        </picture>
 
       </div>
     </div>
+  </section>
+
+  <section class="dividends navDestination">
+    <div class="container">
+      <h2>Earn Openmeme.io dividends</h2>
+
+      <p class="dividends__txt">
+        You don’t need to trade our token to profit from it.
+      </p>
+      <p class="dividends__txt">
+        By owning OMC, you become eligible for dividends of all profits generated by Openmeme.io from ads, trading and minting fees, and more. Get paid in $MATIC simply for hodling, no matter if you use Openmeme.io or not!
+      </p>
+
+      <p class="dividends__txt dividends__txt--bold">
+        That’s it, there’s no catch. Just STONKS.
+      </p>
+
+      <button class="disabled-button" disabled>
+        Coin sale coming soon!
+      </button>
+      <div class="dividends__visualization">
+        <picture>
+          <source media="(min-width:576px)" srcset="./images/dividend.webp">
+          <img src="./images/dividend-sm.webp" alt="graph image">
+        </picture>
+
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="dividends__stats">
+        <div>
+          <p class="orange-txt">20%</p>
+          <p>Treasury</p>
+        </div>
+        <div>
+          <p class="purple-txt">2.4%</p>
+          <p>Seed</p>
+        </div>
+        <div>
+          <p class="mint-txt">7%</p>
+          <p>Private</p>
+        </div>
+        <div>
+          <p class="green-txt">17%</p>
+          <p>Team</p>
+        </div>
+        <div>
+          <p class="yellow-txt">1%</p>
+          <p>Advisors & partners</p>
+        </div>
+        <div>
+          <p class="dark-orange-txt">1.6%</p>
+          <p>Liquidity</p>
+        </div>
+        <div>
+          <p class="blue-txt">51%</p>
+          <p>Ecosystem incentives</p>
+        </div>
+      </div>
+    </div>
+
+
   </section>
 
   <section class="team">
     <div class="container">
       <div class="heading">
         <h2>Team & Advisors</h2>
-        <img src="./images/team-arrow.png" alt="blue arrow">
-        <img src="./images/team-arrow2.png" alt="orange arrow">
+        <img src="./images/team-arrow.webp" alt="blue arrow">
+        <img src="./images/team-arrow2.webp" alt="orange arrow">
       </div>
       <p class="team__subtitle">
         We are a team of experienced entrepreneurs, responsible for dozens of successful startups all round the world. Most of us have been involved in community-driven meme plarforms and blockchain projects for over 10 years.
@@ -279,7 +422,7 @@
         <div class="teammate">
           <div class="teammate__tag teammate__tag--orange">advisor</div>
           <div class="teammate__picture">
-            <img src="./images/team/team9.png" alt="team member image">
+            <img src="./images/team/team9.webp" alt="team member image">
           </div>
           <div class="teammate__description">
             <p>Przemysław Supeł</p>
@@ -290,7 +433,7 @@
         <div class="teammate">
           <div class="teammate__tag teammate__tag--orange">advisor</div>
           <div class="teammate__picture">
-            <img src="./images/team/team8.png" alt="team member image">
+            <img src="./images/team/team8.webp" alt="team member image">
           </div>
           <div class="teammate__description">
             <p>Bogusz Kończak</p>
@@ -301,7 +444,7 @@
         <div class="teammate">
           <div class="teammate__tag">team</div>
           <div class="teammate__picture">
-            <img src="./images/team/team7.png" alt="team member image">
+            <img src="./images/team/team7.webp" alt="team member image">
           </div>
           <div class="teammate__description">
             <p>Paweł Podsiadły</p>
@@ -312,7 +455,7 @@
         <div class="teammate">
           <div class="teammate__tag">team</div>
           <div class="teammate__picture teammate__picture--darkorange">
-            <img src="./images/team/team6.png" alt="team member image">
+            <img src="./images/team/team6.webp" alt="team member image">
           </div>
           <div class="teammate__description">
             <p>Sebastian Kalinowski</p>
@@ -323,7 +466,7 @@
         <div class="teammate">
           <div class="teammate__tag">team</div>
           <div class="teammate__picture teammate__picture--blueish">
-            <img src="./images/team/team5.png" alt="team member image">
+            <img src="./images/team/team5.webp" alt="team member image">
           </div>
           <div class="teammate__description">
             <p>Karol Rudziński</p>
@@ -334,7 +477,7 @@
         <div class="teammate">
           <div class="teammate__tag">team</div>
           <div class="teammate__picture teammate__picture--purple">
-            <img src="./images/team/team4.png" alt="team member image">
+            <img src="./images/team/team4.webp" alt="team member image">
           </div>
           <div class="teammate__description">
             <p>Tim Kremer</p>
@@ -345,7 +488,7 @@
         <div class="teammate">
           <div class="teammate__tag">team</div>
           <div class="teammate__picture teammate__picture--blue">
-            <img src="./images/team/team3.png" alt="team member image">
+            <img src="./images/team/team3.webp" alt="team member image">
           </div>
           <div class="teammate__description">
             <p>Magdalena Pietrysko</p>
@@ -356,7 +499,7 @@
         <div class="teammate">
           <div class="teammate__tag">team</div>
           <div class="teammate__picture teammate__picture--green">
-            <img src="./images/team/team2.png" alt="team member image">
+            <img src="./images/team/team2.webp" alt="team member image">
           </div>
           <div class="teammate__description">
             <p>Michał Czekała</p>
@@ -367,28 +510,13 @@
         <div class="teammate">
           <div class="teammate__tag">team</div>
           <div class="teammate__picture teammate__picture--orange">
-            <img src="./images/team/team1.png" alt="team member image">
+            <img src="./images/team/team1.webp" alt="team member image">
           </div>
           <div class="teammate__description">
             <p>Dmitry Glushchenko</p>
             <p>Founder</p>
           </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       </div>
 
@@ -414,7 +542,7 @@
 
     </div>
   </section>
-  <section class="faq">
+  <section class="faq navDestination">
     <div class="container">
       <h2>FAQ</h2>
 
@@ -545,6 +673,46 @@
       </div>
     </div>
   </section>
+
+  <section class="profit">
+    <div class="container">
+      <div class="profit__content">
+        <img src="./images/profit-logo.webp" alt="profit logo image">
+        <h2>
+          Start profiting from <br>WEB3 economy!
+        </h2>
+
+        <button class="disabled-button" disabled>
+          Coin sale coming soon!
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="social">
+        <a href="">
+          <img src="./images/discord.webp" alt="dicsord logo">
+          <span>Discord</span>
+        </a>
+        <a href="">
+          <img src="./images/telegram.webp" alt="telegram logo">
+          <span>Telegram</span>
+        </a>
+        <a href="" class="gitbook-link gitbook-link--mobile">
+          Gitbook <img src="./images/gitbook-arrow.webp" alt="small arrow">
+        </a>
+      </div>
+
+      <div class="footer__privacies">
+        <a href="">Terms of Service</a>
+        <a href="">Privacy Policy</a>
+        <span class="divider">|</span>
+        <p><span>Copyright</span> 2023 © Openmeme<span>. All rights reserved</span></p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 

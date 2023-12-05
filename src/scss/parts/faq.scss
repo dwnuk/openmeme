@@ -1,5 +1,9 @@
 .faq {
   padding: 80px 0;
+  background-image: url(../../images/faq-bits-sm.webp);
+  background-repeat: no-repeat;
+  background-size: 360px auto;
+  background-position: top, center;
 
   h2 {
     text-transform: uppercase;
@@ -123,6 +127,9 @@
 
 @media(min-width: $lg) {
   .faq {
+    background-image: url(../../images/faq-bits-left.webp), url(../../images/faq-bits-right.webp);
+    background-size: 300px auto 300px auto;
+    background-position: left 20px top 200px, right 20px top 200px;
 
     &__content {
       row-gap: 24px;
@@ -152,7 +159,9 @@
 
 @media(min-width: $xl) {
   .faq {
-
+    padding: 120px 0;
+    background-size: auto auto, auto auto;
+    background-position: left 20px top 120px, right 20px top 120px;
 
     &__el {
      &__top {

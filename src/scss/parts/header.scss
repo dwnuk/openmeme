@@ -1,11 +1,12 @@
 .header {
+  margin-top: 64px;
   padding-top: 170px;
   background-color: $primary-color;
-  background-image: url(../../images/pooh.png);
+  background-image: url(../../images/header-bits-sm.webp), url(../../images/pooh.webp);
   background-size: 360px auto;
   background-position: top right;
   background-repeat: no-repeat;
-  background-blend-mode: luminosity;
+  background-blend-mode: normal, luminosity;
 
 
 
@@ -22,21 +23,9 @@
   }
 
   .app-info {
-    border: 0px;
-
-    display: block;
     margin: 0 auto 42px;
     max-width: 510px;
     width: 100%;
-
-    border-radius: 12px;
-    background-color: #26354A;
-    padding: 12px 40px;
-
-    font-weight: 900;
-    line-height: 150%;
-    color: #A2ABB9;
-    text-align: center;
   }
 
   .app-link {
@@ -70,9 +59,10 @@
 
 @media (min-width: $md) {
   .header {
-    background-image: url(../../images/fry.png), url(../../images/pooh.png);
-    background-size: 360px auto, 360px auto;
-    background-position: top left, top right;
+    background-image: url(../../images/fry.webp), url(../../images/header-bits-sm.webp), url(../../images/pooh.webp);
+    background-size: 360px auto;
+    background-position: top left, top right, top right;
+    background-blend-mode: luminosity, normal, luminosity;
 
     h1,
     .subtitle {
@@ -94,10 +84,14 @@
 
 @media (min-width: $lg) {
   .header {
-    background-position: bottom 120px left, bottom 100px right;
+    background-image: url(../../images/header-bits-left.webp), url(../../images/fry.webp), url(../../images/header-bits-right.webp), url(../../images/pooh.webp);
+    background-size: 360px auto;
+
+    background-blend-mode: normal, luminosity, normal, luminosity;
+    background-position: bottom 120px left, bottom 120px left, bottom 100px right, bottom 100px right;
     background-size: 420px auto, 500px auto;
 
-    padding-top: 24px;
+    padding-top: 88px;
 
     h1 {
       max-width: 560px;
@@ -239,6 +233,6 @@
 @media (min-width: $xxl) {
   .header {
     background-size: auto auto, auto auto;
-    background-position: bottom 37px left, bottom 6px right;
+    background-position: bottom 37px left, bottom 37px left, bottom 6px right, bottom 6px right;
   }
 }

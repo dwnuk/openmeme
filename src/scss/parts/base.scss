@@ -110,6 +110,37 @@ $primary-color: #101725;
   font-style: italic;
 }
 
+.blue-txt {
+  color: #2C87EE;
+}
+
+.yellow-txt {
+  color: #D9F72A;
+}
+
+.purple-txt {
+  color: #BC66FF;
+}
+
+.orange-txt {
+  color: #FFB400;
+}
+
+.mint-txt {
+  color: #88F2EC;
+}
+
+.green-txt {
+  color: #46CA6B;
+}
+
+.dark-orange-txt {
+  color: #EA5530;
+}
+
+
+
+
 
 html {
   font-size: 62.5%;
@@ -157,12 +188,31 @@ h3 {
   letter-spacing: -.32px;
 }
 
+.disabled-button {
+  border: 0px;
+    display: block;
+    border-radius: 12px;
+    background-color: #26354A;
+    padding: 12px 40px;
+
+    font-weight: 900;
+    line-height: 150%;
+    color: #A2ABB9;
+    text-align: center;
+}
+
 @media (min-width: $md) {
 
   h2 {
     font-size: 4rem;
     text-align: center;
     margin-bottom: 40px;
+  }
+
+  .disabled-button {
+    padding: 24px 40px;
+
+    font-size: 2rem;
   }
 
 }

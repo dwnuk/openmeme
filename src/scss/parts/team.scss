@@ -201,6 +201,10 @@
 
 @media (min-width: $lg) {
   .team {
+    background-image: url(../../images/team-bits.webp);
+    background-repeat: no-repeat;
+    background-size: 95% auto;
+    background-position: top 80px center;
     .heading {
       margin: 0 auto 15px;
       h2 {
@@ -246,6 +250,8 @@
 
 @media (min-width: $xl) {
   .team {
+    padding: 120px 0;
+    background-position: top 120px center;
     .heading {
 
       h2 {

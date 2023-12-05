@@ -1,0 +1,106 @@
+.footer {
+  background-color: #1A2638;
+  padding: 32px 0 20px;
+
+  .social {
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+    margin-bottom: 16px;
+
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 900;
+      font-size: 1.6rem;
+      border-radius: 12px;
+      background-color: #26354A;
+      padding: 8px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 8px;
+
+      &:last-of-type {
+        padding: 8px 16px;
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  &__privacies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    a, p {
+      color: #A2ABB9;
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .divider {
+      display: none;
+    }
+
+    p {
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: $xl) {
+  .footer {
+    background-color: transparent;
+    padding: 0;
+
+    .container {
+      border-top: 1px solid #a2abb970;
+      padding: 40px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row-reverse;
+    }
+
+    .social {
+      margin-bottom: 0;
+      a {
+        background-color: transparent;
+        span {
+          display: block;
+        }
+      }
+
+      .gitbook-link {
+        display: none;
+      }
+    }
+
+    &__privacies {
+      flex-direction: row-reverse;
+      column-gap: 16px;
+
+      .divider {
+        display: block;
+      }
+
+      p, a, .divider {
+        font-size: 1.6rem;
+      }
+
+       p {
+        span {
+          display: inline;
+        }
+       }
+    }
+  }
+}

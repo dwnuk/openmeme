@@ -34,6 +34,9 @@
 
 @media (min-width: $lg) {
   .thoughts {
+    background-image: url(../../images/thoughts-bit-left.webp), url(../../images/thoughts-bit-right.webp);
+    background-repeat: no-repeat;
+    background-position: left 42px top 40%, right 42px top 20%;;
     &::after {
       width: 468px;
       height: 468px;
@@ -45,5 +48,11 @@
       align-items: flex-start;
       flex-wrap: nowrap;
     }
+  }
+}
+
+@media (min-width: $xl) {
+  .thoughts {
+    padding: 120px 0;
   }
 }

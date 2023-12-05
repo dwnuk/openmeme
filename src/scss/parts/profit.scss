@@ -1,0 +1,75 @@
+.profit {
+  padding: 80px 0;
+  background-image: url(../../images/profit-bg-sm.webp);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 20;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      z-index: -1;
+      opacity: .2;
+      width: 345.292px;
+      height: 346.01px;
+      border-radius: 50%;
+      background-color: #2C87EE;
+      filter: blur(71.7862548828125px);
+    }
+
+    img {
+      margin-bottom: 24px;
+    }
+  }
+
+  .disabled-button {
+    width: 100%;
+  }
+}
+
+@media (min-width: $sm) {
+  .profit {
+    .disabled-button {
+      width: auto;
+    }
+  }
+}
+
+@media (min-width: $md) {
+  .profit {
+    background-image: url(../../images/profit-bg.webp);
+  }
+}
+
+@media (min-width: $xl) {
+  .profit {
+    padding: 120px 0;
+
+    h2 {
+      font-size: 7.2rem;
+    }
+    &__content {
+      &:after {
+
+        width: 481px;
+height: 482px;
+filter: blur(100px);
+      }
+    }
+  }
+}

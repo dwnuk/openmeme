@@ -239,6 +239,12 @@
 
 @media (min-width: $xl) {
   .traffic {
+    padding: 120px 0;
+    background-color: $primary-color;
+    background-image: url(../../images/cato-bits.webp), url(../../images/doge-bits.webp);
+    background-repeat: no-repeat;
+    background-position: top 223px left, top 342px right;
+
     .gradient-border {
       max-width: 923px;
     }
@@ -262,5 +268,16 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: $xxl) {
+  .traffic {
+    background-color: $primary-color;
+    background-image: url(../../images/cato-bits.webp), url(../../images/cato-big.webp), url(../../images/doge-bits.webp), url(../../images/doge.webp);
+    background-repeat: no-repeat;
+    background-position: top 223px left, top 223px left, top 342px right, top 342px right;
+    background-blend-mode: normal, luminosity, normal, luminosity;
+
   }
 }
