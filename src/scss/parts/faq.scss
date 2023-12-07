@@ -58,7 +58,7 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%) rotate(0deg);
-          transition: transform .5s;
+          transition: transform .5s ease;
         }
 
         &:before {
@@ -95,7 +95,7 @@
     letter-spacing: 0.28px;
     max-height: 0;
     padding-bottom: 0;
-    transition: max-height .5s ease-in, padding .85s;
+    transition: max-height .5s, padding .85s;
 
     ul {
       margin-left: 15px;
@@ -128,6 +128,7 @@
 @media(min-width: $lg) {
   .faq {
     background-image: url(../../images/faq-bits-left.webp), url(../../images/faq-bits-right.webp);
+    background-repeat: repeat-y, repeat-y;
     background-size: 300px auto 300px auto;
     background-position: left 20px top 200px, right 20px top 200px;
 
