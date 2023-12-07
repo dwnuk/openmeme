@@ -209,13 +209,20 @@
 
       .users {
         margin-bottom: 24px;
-        column-gap: 5px;
+        column-gap: 12px;
         div {
+          display: flex;
+          align-items: center;
           font-size: 5.6rem;
           line-height: 115%;
-          padding: 15px 15px;
+          padding: 15px 0;
           border-radius: 12px;
           border-width: 2px;
+          width: 72px;
+        }
+
+        .dot {
+          width: 18px;
         }
       }
 
@@ -245,16 +252,21 @@
     background-repeat: no-repeat;
     background-position: top 223px left, top 342px right;
 
+    h2 {
+      font-size: 4rem;
+      margin-bottom: 24px;
+    }
+
     .gradient-border {
       max-width: 923px;
     }
 
     &__content {
-      padding: 60px 55px 48px;
+      padding: 48px 55px 28px;
 
       .users {
         div {
-          padding: 15px 19px;
+          padding: 15px 0;
         }
       }
 
@@ -278,6 +290,15 @@
     background-repeat: no-repeat;
     background-position: top 223px left, top 223px left, top 342px right, top 342px right;
     background-blend-mode: normal, luminosity, normal, luminosity;
+
+    h2 {
+      font-size: 6rem;
+      margin-bottom: 48px;
+    }
+
+    &__content {
+      padding: 60px 55px 48px;
+    }
 
   }
 }

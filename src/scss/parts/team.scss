@@ -12,7 +12,7 @@
     }
 
     img {
-      z-index: 99;
+      z-index: -1;
 
       &:first-of-type {
         align-self: end;

@@ -110,6 +110,12 @@ $primary-color: #101725;
   font-style: italic;
 }
 
+.appear_effect {
+  opacity: 0;
+  transform: translateY(80px);
+  margin-bottom: 20px;
+}
+
 .blue-txt {
   color: #2C87EE;
 }
@@ -153,6 +159,7 @@ html {
 img {
   max-width: 100%;
   display: block;
+  transform: translateZ(0);
 }
 
 body {

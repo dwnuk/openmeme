@@ -8,7 +8,9 @@
   background-repeat: no-repeat;
   background-blend-mode: normal, luminosity;
 
-
+.mask {
+  display: none;
+}
 
   .subtitle {
     color: #A2ABB9;
@@ -84,14 +86,46 @@
 
 @media (min-width: $lg) {
   .header {
-    background-image: url(../../images/header-bits-left.webp), url(../../images/fry.webp), url(../../images/header-bits-right.webp), url(../../images/pooh.webp);
+    background-image: url(../../images/header-bits-left.png), url(../../images/fry.webp), url(../../images/header-bits-right.png), url(../../images/pooh.webp);
     background-size: 360px auto;
 
     background-blend-mode: normal, luminosity, normal, luminosity;
     background-position: bottom 120px left, bottom 120px left, bottom 100px right, bottom 100px right;
     background-size: 420px auto, 500px auto;
 
-    padding-top: 88px;
+    padding-top: 42px;
+    position: relative;
+
+    .container {
+      position: relative;
+      z-index: 8;
+    }
+
+    .mask {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 130px;
+      left: 50%;
+      transform: translateX(-50%) translateY(120px);
+      z-index: 2;
+      width: 85%;
+      opacity: 0;
+
+
+
+      img {
+        &:first-of-type {
+          width: 200px;
+          max-width: 314px;
+        }
+        &:last-of-type {
+          width: 400px;
+          max-width: 705px;
+        }
+      }
+    }
 
     h1 {
       max-width: 560px;
@@ -159,9 +193,7 @@
         font-weight: 900;
         transition: box-shadow .5s;
 
-        &:hover {
-          box-shadow: 10px 10px 100px rgba(66, 151, 247, 0.4), 10px 10px 120px #0C2E63;
-        }
+
 
         img {
           width: 60px;
@@ -192,34 +224,37 @@
 
 @media (min-width: $xl) {
   .header {
-    background-size: 520px auto, 600px auto;
+    background-size: 470px auto, 550px auto;
+    background-position: bottom 120px left, bottom 120px left, bottom 100px right, bottom 100px right;
+    padding-top: 42px;
 
     h1 {
-      font-size: 7.2rem;
-      max-width: 1160px;
+      font-size: 5.5rem;
+      max-width: 800px;
       margin-bottom: 32px;
     }
 
     .subtitle {
-      font-size: 2.4rem;
+      font-size: 2rem;
       max-width: 700px;
       margin-bottom: 32px;
     }
 
     .app-link {
-      width: 432px;
-      height: 432px;
+      width: 300px;
+      height: 300px;
+
 
 
       a {
-        img {
-          width: 92px;
-        }
-
         p {
-          font-size: 2rem;
+          font-size: 1.5rem;
+        }
+        img {
+          width: 50px;
         }
       }
+
     }
     .more {
       p {
@@ -234,5 +269,23 @@
   .header {
     background-size: auto auto, auto auto;
     background-position: bottom 37px left, bottom 37px left, bottom 6px right, bottom 6px right;
+    padding-top: 88px;
+
+    .app-link {
+      width: 432px;
+      height: 432px;
+
+
+
+      a {
+        img {
+          width: 92px;
+        }
+
+        p {
+          font-size: 2rem;
+        }
+      }
+    }
   }
 }

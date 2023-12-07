@@ -24,6 +24,8 @@
 
   &__visualization {
     margin-top: -30px;
+    margin-left: -15px;
+    margin-right: -15px;
 
     img {
       width: 100%;
@@ -126,6 +128,10 @@
     background-position: top 120px center;
     &__txt {
       font-size: 2rem;
+    }
+
+    img {
+      max-width: 1062px;
     }
   }
 }

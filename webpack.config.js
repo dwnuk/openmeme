@@ -1,17 +1,12 @@
 const path = require("path");
-const glob = require('glob');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const PurgeCSSPlugin = require('purgecss-webpack-plugin');
 
-const PATHS = {
-    src: path.join(__dirname, 'src')
-}
-
 const mode = process.env.NODE_ENV === 'production' ? 'production' : 'development';
-const fileExtension = process.env.NODE_ENV === 'production' ? 'html.twig' : 'html';
+const fileExtension = process.env.NODE_ENV === 'production' ? 'html' : 'html';
 const dataCoreFile = process.env.NODE_ENV === 'production' ? 'cleanFile' : 'dataCoreDev';
 
 module.exports = {
@@ -36,17 +31,17 @@ module.exports = {
             filename: "[name].[contenthash].min.css"
         }),
         new HtmlWebpackPlugin({
-            template: "./src/index.html.twig",
+            template: "./src/index.html", // Update template path
             filename: `index.html`,
             chunks: ['index', `${dataCoreFile}`]
         }),
 
-        // new CopyWebpackPlugin({
-        //     patterns: [{
-        //         from: "./src/fonts/**/*",
-        //         to: "[name].[ext]",
-        //     }]
-        // }),
+        new CopyWebpackPlugin({
+            patterns: [{
+                from: "./src/pdf/**/*",
+                to: "[name].[ext]",
+            }]
+        }),
 
         new CleanWebpackPlugin()
     ],
@@ -55,6 +50,7 @@ module.exports = {
         rules: [
             {
                 test: /\.html$/,
+                exclude: /index\.html/, // Exclude the main index.html file from processing
                 use: {
                     loader: "html-loader",
                     options: {
@@ -84,7 +80,7 @@ module.exports = {
                     }
             },
             {
-                test: /\.twig$/,
+                test: /\.html$/,
                 use: {
                     loader: 'html-loader',
                     options: {
@@ -123,4 +119,4 @@ module.exports = {
             }
         ]
     }
-}
+};

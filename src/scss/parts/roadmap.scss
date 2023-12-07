@@ -19,6 +19,8 @@
 
   img {
     margin:  0 auto;
+    max-width: 360px;
+    width: 100%;
   }
 }
 
@@ -28,6 +30,12 @@
       font-size: 1.8rem;
       max-width: 600px;
       margin: 0 auto 80px;
+    }
+
+    img {
+
+      max-width: 100%;
+
     }
   }
 }
