@@ -233,7 +233,7 @@
       align-items: center;
       justify-content: space-between;
       position: absolute;
-      bottom: 80px;
+      bottom: 120px;
       left: 50%;
       transform: translateX(-50%) translateY(120px);
       z-index: 2;
@@ -244,11 +244,11 @@
 
       img {
         &:first-of-type {
-          width: auto;
+          width: 200px;
           max-width: 314px;
         }
         &:last-of-type {
-          width: auto;
+          width: 400px;
           max-width: 705px;
         }
       }
@@ -267,6 +267,7 @@
     }
 
     .app-link {
+      margin: 0 auto 120px;
       width: 300px;
       height: 300px;
 
@@ -296,6 +297,27 @@
     background-size: auto auto, auto auto;
     background-position: bottom 37px left, bottom 37px left, bottom 6px right, bottom 6px right;
     padding-top: 88px;
+
+    .mask {
+
+      bottom: 80px;
+
+      width: 85%;
+      opacity: 0;
+
+
+
+      img {
+        &:first-of-type {
+          width: auto;
+          max-width: 314px;
+        }
+        &:last-of-type {
+          width: auto;
+          max-width: 705px;
+        }
+      }
+    }
 
     .app-link {
       width: 432px;

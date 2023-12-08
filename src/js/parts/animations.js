@@ -36,7 +36,7 @@ gsap.utils.toArray('.appear_effect').forEach(element => {
   // Create the ScrollTrigger for each element
   ScrollTrigger.create({
     trigger: element,
-    start: "top 75%", // Adjust this value based on when you want the animation to start
+    start: "top 97%", // Adjust this value based on when you want the animation to start
     onEnter: () => createAppearAnimation(element),
     once: true,
   });
